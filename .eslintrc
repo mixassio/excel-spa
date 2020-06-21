@@ -12,7 +12,8 @@
 		"arrow-parens": "off",
 		"operator-linebreak": "off",
 		"max-len": "off",
-		"no-unused-vars": "off"
+		"no-unused-vars": "off",
+		"no-case-declarations": "off"
 	},
 	"extends": ["eslint:recommended", "google"]
 }
