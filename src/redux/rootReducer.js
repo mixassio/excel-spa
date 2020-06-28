@@ -1,7 +1,7 @@
 import { TABLE_RESIZE, CHANGE_TEXT, CHANGE_STYLES, APPLY_STYLE, CHANGE_TITLE } from './types';
 import { toInlineStyles } from '../core/utils';
 
-export function rootReduser(state, action) {
+export function rootReducer(state, action) {
   let field;
   let val;
   switch (action.type) {

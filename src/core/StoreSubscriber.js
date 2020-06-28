@@ -13,7 +13,7 @@ export class StoreSubscriber {
       Object.keys(state).forEach(key => {
         if (!isEqual(this.prevState[key], state[key])) {
           components.forEach(component => {
-            if (component.subscribe.includes(key)) {
+            if (component.isWatching(key)) {
               const changes = { [key]: state[key] };
               component.storeChanged(changes);
             }

@@ -43,7 +43,7 @@ export function createToolbar(s) {
     {
       icon: 'format_italic',
       active: s['fontStyle'] === 'italic',
-      value: { fontStyle: s['fontStyle'] === 'italic' ? 'normal' : 'italic' },
+      value: { fontStyle: s['fontStyle'] === 'italic' ? 'normal' : 'italic  ' },
     },
     {
       icon: 'format_underlined',

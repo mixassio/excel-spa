@@ -5,7 +5,7 @@ export function createStore(rootReduser, initStore = {}) {
     subscribe(fn) {
       listeners.push(fn)
       return {
-        onsubscribe() {
+        unsubscribe() {
           listeners = listeners.filter(l => l !== fn)
         },
       }
